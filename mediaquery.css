@@ -1,0 +1,341 @@
+/* .container {
+   border: 2px solid;
+} */
+
+#checking {
+   visibility: hidden;
+
+}
+
+.menu ul :nth-child(5) {
+   visibility: hidden;
+}
+
+.menu label i {
+   visibility: hidden;
+}
+
+@media screen and (max-width:968px) {
+   .bannerimg {
+      display: none;
+   }
+
+
+   .bannerimg img {
+      display: none;
+   }
+
+   .headertag {
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .navbar {
+      gap: 0;
+   }
+
+   .shadowbox {
+      margin-top: 0px;
+   }
+
+   .footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr)
+   }
+
+   .navbar .button {
+      margin-right: 0;
+   }
+
+
+   .navbar .brandname {
+      margin-right: 10px;
+   }
+
+   .banner {
+      display: flex;
+      justify-content: center;
+   }
+   
+
+.banner_container{
+      display: flex;
+   }
+}
+@media screen and (max-width:814px) {
+    .navbar.btn{
+      padding: 10px 12px;
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .menu label i {
+      visibility: visible;
+      color: black;
+      font-size: 20px;
+   }
+   .navbar li a {
+    color: white;
+   }
+
+   #checking:checked~label i::before {
+      content: "\f00d";
+   }
+
+   #checking:checked ~  ul {
+      left: 0%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+   }
+
+   .dropdown_content {
+      position: static;
+     background-color: black;
+   }
+
+   .menu ul {
+      position: fixed;
+      top: 70px;
+      left: -100%;
+      height: calc(100vh - 70px);
+      width: 100%;
+      display: block;
+      text-align: center;
+      transition: all 400ms;
+      background-color:black;
+      overflow: auto;
+      padding: 30px;
+   }
+   .navbar{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      padding: 0 20px;
+   }
+
+   label {
+      position: absolute;
+      left: 15px;
+      top: 27px;
+   }
+
+   .menu li {
+      display: none;
+   }
+
+   .menu ul :nth-child(5) {
+      visibility: visible;
+   }
+
+   .navbar .btn.transparent_button {
+      display: none;
+   }
+
+   .navbar .btn {
+      padding: 10px 15px;
+      gap: 5px;
+   }
+
+   .navbar .brandname {
+      margin-left: 35px;
+   }
+
+   .banner .headertag {
+      width: 100%;
+   }
+
+   .shadowbox {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 0px;
+   }
+
+   .headertag {
+      align-items: center;
+      text-align: center;
+   }
+   .headertag h1{
+      padding-top: 35px;
+   }
+
+   .box h3 {
+      align-items: center;
+   }
+
+
+   .box {
+      align-items: center;
+      text-align: center;
+   }
+.banner_container{
+   flex-direction: column-reverse;
+}
+.banner_content {
+      align-items: center;
+      text-align: center;
+   }
+
+   .banner_content h2 {
+      align-items: center;
+   }
+
+   .header_section {
+      align-items: center;
+      text-align: center;
+   }
+
+   .card_section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+   }
+
+   .customer_opinion {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .team_members {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .count_section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+   }
+
+   .footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+   }
+   .card_section{
+      padding: 0px  20px;
+   }
+
+   .menu li {
+      display: block
+   }
+   .employees{
+      padding: 0px 50px;
+   }
+}
+
+
+@media screen and (max-width:500px) {
+   .navbar .btn {
+      padding: 5px 5px;
+      gap: 2px;
+   }
+
+   .banner {
+      text-align: center;
+      align-items: center;
+   }
+
+   .banner .headertag {
+      width: 100%;
+   }
+   .banner_container img{
+      display: none;
+   }
+   .banner_container.img img{
+      display: none;
+   }
+
+   .count_section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .card_section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .customer_opinion {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .team_members {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .footer {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+      align-items: center;
+   }
+
+   .footer ul {
+      align-items: center;
+      text-align: center;
+   }
+
+   .header_section p {
+      max-width: 270px;
+      text-align: center;
+      align-items: center;
+   }
+
+   .banner_container p {
+      max-width: 270px;
+   }
+
+   .footer_tail {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+      text-align: center;
+      align-items: center;
+   }
+
+   input[type="text"] {
+      padding: 15px 10px 15px 20px;
+   }
+
+   .subscribe_bar .btn.filled_button {
+      padding: 0px 5px;
+   }
+}
+
+@media screen and (max-width:370px) {
+   .btn.filled_button {
+      font-size: 12px;
+      padding: 10px;
+   }
+
+   .navbar .button .btn.filled_button {
+      margin-left: -35px;
+      padding: 5px;
+      margin-right: 2px;
+   }
+
+   .btn.btn.transparent_button {
+      font-size: 12px;
+      padding: 10px 15px;
+   }
+
+   .subscribe_bar .btn.filled_button {
+      font-size: 14px;
+      padding: 0 15px;
+   }
+   .headertag h1{
+ padding-top:35px;
+   }
+}
